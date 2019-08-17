@@ -1,0 +1,31 @@
+{
+  "name": "ssr",
+  "version": "1.0.0",
+  "description": "Linkedin Next.js course project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simotae14/SSRNext.git"
+  },
+  "keywords": [
+    "next.js",
+    "ssr"
+  ],
+  "author": "Simone Taeggi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simotae14/SSRNext/issues"
+  },
+  "homepage": "https://github.com/simotae14/SSRNext#readme",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "next": "^9.0.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
