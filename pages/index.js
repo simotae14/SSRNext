@@ -1,19 +1,33 @@
+import React from 'react';
 import './index.css';
 import Card from './Card';
+import data from '../data/data.json';
 
-export default () => (
-    <div className="App">
-        <header className="App-header">
-            <img
-                src="/static/logo.png"
-                alt="logo"
-                className="static-logo"
-            />
-        </header>
-        <div className="Grid">
-            <Card />
-            <Card />
-            <Card />
-        </div>
-    </div>
-)
+export default class Index extends React.Component {
+    static async getInitialProps () {
+        return { cards: data };
+    }
+    render() {
+        return (
+            <div className="App">
+                <header className="App-header">
+                    <img
+                        src="/static/logo.png"
+                        alt="logo"
+                        className="static-logo"
+                    />
+                </header>
+                <div className="Grid">
+                    {
+                        this.props.cards.map((card) => (
+                            <Card key={card.id} />
+                        ))
+                    }
+                    <Card />
+                    <Card />
+                    <Card />
+                </div>
+            </div>
+        );
+    }
+}
