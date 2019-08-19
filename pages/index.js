@@ -23,9 +23,6 @@ export default class Index extends React.Component {
                             <Card key={card.id} />
                         ))
                     }
-                    <Card />
-                    <Card />
-                    <Card />
                 </div>
             </div>
         );
